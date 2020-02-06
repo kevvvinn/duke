@@ -14,7 +14,4 @@ public class Deadline extends Task {
         return "(by: " + this.by + ")";
 
     }
-    public String extraInfo(){
-        return this.by;
-    }
 }

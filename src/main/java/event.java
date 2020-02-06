@@ -12,11 +12,9 @@ public class event extends Task {
     @Override
     public String getWhen(){
         return "(at: " + this.when + ")";
-
     }
     public String extraInfo(){
         return this.when;
     }
-
 
 }

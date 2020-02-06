@@ -1,0 +1,10 @@
+diff a/src/main/java/Duke.java b/src/main/java/Duke.java	(rejected hunks)
+@@ -97,7 +97,7 @@
+             }
+             //Error handling when user type words that are not the intended instructions
+             if(!input.contains("done") && !input.contains("list") && !input.contains("todo") &&  !input.contains("deadline")
+-                    && !input.contains("event") && !input.contains("delete")){
++                    && !input.contains("event")){
+                 System.out.println("OPPS!!! I'm sorry, but I don't know what that means :-( ");
+             }
+             if(input.contains("done")){

@@ -1,4 +1,3 @@
-
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.io.File;
@@ -107,27 +106,27 @@ public class Duke{
 
                 switch(strArray[0]){
                     case "T":   type.add("T");
-                                Todo t = new Todo(strArray[2]);
-                                list.add(t);
-                                if(strArray[1].contains("1")){
-                                    list.get(i).markDone();
-                                }
-                                break;
+                        Todo t = new Todo(strArray[2]);
+                        list.add(t);
+                        if(strArray[1].contains("1")){
+                            list.get(i).markDone();
+                        }
+                        break;
 
                     case "D":   type.add("D");
-                                Deadline s = new Deadline(strArray[2], strArray[3]);
-                                list.add(s);
-                                if(strArray[1].contains("1")){
-                                    list.get(i).markDone();
-                                }
-                                break;
+                        Deadline s = new Deadline(strArray[2], strArray[3]);
+                        list.add(s);
+                        if(strArray[1].contains("1")){
+                            list.get(i).markDone();
+                        }
+                        break;
                     case "E":   type.add("E");
-                                event e = new event(strArray[2], strArray[3]);
-                                list.add(e);
-                                if(strArray[1].contains("1")){
-                                    list.get(i).markDone();
-                                }
-                                break;
+                        event e = new event(strArray[2], strArray[3]);
+                        list.add(e);
+                        if(strArray[1].contains("1")){
+                            list.get(i).markDone();
+                        }
+                        break;
                 }
 
 
