@@ -1,4 +1,6 @@
-T -0 -help me -
+T -0 -finish readings -
+D -1 -return lib  -2020-03-29
+D -0 -submit assignment  -2020-03-02
 E -0 -night festival  -2020-03-25
-D -0 -return lib book  -2020-02-27
-T -0 -finish reading -
+T -0 -smoke -
+E -0 -voting election  -2020-03-25

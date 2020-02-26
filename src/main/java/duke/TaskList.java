@@ -191,24 +191,26 @@ public class TaskList {
     public static void searchByName(ArrayList<Task> list, String input) throws IOException {
         String keyword = input.replaceAll("find ", "");
         boolean hasMatch = false;
-        int [] matchFound = new int[100];
+        int[] matchFound = new int[100];
         int count = 0;
-        for(int i = 0 ; i < list.size();i++){
-            if(list.get(i).getDescription().contains(keyword)){
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).getDescription().contains(keyword)) {
                 hasMatch = true;
                 matchFound[i] = i;
                 count = count + 1;
             }
         }
-
         if (!hasMatch){
             System.out.println("Sorry Master, there is no such task that has the keyword: " + keyword);
         }
+
         else {
             System.out.println("Here are the matching task(s) in your list: ");
             for(int i = 0 ; i < count + 1;i++){
                 System.out.println( i+1 + ".[" + list.get(matchFound[i]).getType() + "]" +  list.get(matchFound[i]).toString());
             }
         }
+    }
+
     }
 }
